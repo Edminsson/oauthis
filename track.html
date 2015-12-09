@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Track Page</title>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70979765-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    
+  </head>
+
+  <body>
+
+    <span>Adress att tracka</span> <input id="trackadress" type="text">
+    <button id="trackknapp">Track</button>
+    <a href="index.html">Gå tillbaka till index</a>
+
+    <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      $(function(){
+        $('#trackknapp').on('click', function(){
+          var adress = $('#trackadress').val();
+          if(!adress) {
+            adress = location.path;
+          }
+          window.ga('set', {page: adress, title:'Scriptgenererad sida'});
+          window.ga('send', 'pageview')
+          console.log('Track', adress);
+        });
+      })
+    </script>
+  </body>
+
+</html>

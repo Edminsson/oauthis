@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+
+  <body>
+	  <div><h2>You are authenticated!</h2></div>
+	  <a href="http://oauthis.azurewebsites.net/">Home</a>
+
+    <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script>
+      $(function(){
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+        var code = getParameterByName('code');
+        var clientId = localStorage.getItem('clientid');
+        var clientSecret = localStorage.getItem('clientsecret');
+        if(!code || !clientId || !clientSecret){
+          alert('Code, id or secret is missing');
+          return;
+        }
+        $.post('https://github.com/login/oauth/access_token?',{
+          client_id: clientId,
+          client_secret: clientSecret,
+          code: code,
+          redirect_uri: 'http://oauthis.azurewebsites.net/authorized.html'
+        }, function(){});
+                
+      })
+    </script>
+
+  </body>
+
+</html>
