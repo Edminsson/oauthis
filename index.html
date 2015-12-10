@@ -16,24 +16,66 @@
 
     </script>
 
+    <link rel="shortcut icon" href="a.png" />
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
     
   </head>
 
   <body>
 
-    <div><span>Client Id</span><input id="client-id" type="text"></div>
-    <div><span>Client Secret</span><input id="client-secret" type="text"></div>
-    <div><button id="knapp">Logga in</button></div>
-    <div><button id="sendCode">Exchange code for access_token</button></div>
-    <div>
-      <a href="dummy.html">Gå till dummy-sida</a>
-      <a href="track.html">Gå till track-sida</a>
-    </div>
-    <div>
-      <div id="message"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">OAuthis</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="dummy.html">Dummy</a></li>
+            <li><a href="track.html">GA tracking</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container contentwrapper" >
+      <div class="row distance">
+
+        <div class="col-sm-6">
+          <div class="input-group">
+            <span class="input-group-addon">Client Id</span>
+            <input type="text" id="client-id" class="form-control" placeholder="Client Id">
+          </div>        
+        </div>
+        <div class="col-sm-6">
+          <div class="input-group">
+            <span class="input-group-addon">Client Secret</span>
+            <input type="text" id="client-secret" class="form-control" placeholder="Client Secret">
+          </div>          
+        </div>
+      </div>
+      <div class="row distance">
+        <div class="col-sm-12">
+          <div class="input-group">
+            <button id="knapp" class="btn btn-primary">Logga in</button>
+            <button id="sendCode" class="btn btn-warning">Exchange code for access_token</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 
