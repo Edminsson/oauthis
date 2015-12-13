@@ -1,0 +1,15 @@
+body {
+	font-size: 19px;
+	font-family: "Alegreya Sans", calibri, candara, "segoe UI", Optima, Arial, sans-serif;
+}
+xbody {
+	font-family: calibri, candara, "segoe UI", Optima, Arial, sans-serif;
+}
+
+.contentwrapper {
+	padding-top: 60px;
+	padding-bottom: 20px;	
+}
+.distance {
+	padding-top: 20px;
+}

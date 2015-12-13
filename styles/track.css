@@ -1,0 +1,31 @@
+body {
+	font-size: 19px;
+	font-family: "Alegreya Sans", calibri, candara, "segoe UI", Optima, Arial, sans-serif;	
+	background: rgb(15,15,15);
+	background-image: url(../images/dark_leather.png);
+	color: rgb(226,226,226);
+}
+.block {
+	width: 300px;
+	margin: 30px auto;
+}
+	.block a {
+		text-align: center;
+		display: block;
+	}
+.button {
+	background-color: rgb(172,140,71);
+	border-radius: 6px;
+}
+	.button a {
+		color: rgb(226,226,226);
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		display: block;
+		padding: 10px 0;
+	}
+	.button a:hover {
+		background-color: rgb(119,97,48);
+		border-radius: 6px;
+	}

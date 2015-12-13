@@ -16,14 +16,20 @@
 
     </script>
 
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="styles/track.css">
+
     
   </head>
 
   <body>
+    
+    <div class="container">
+      <div class="block"><a href="index.html"><img src="../images/a128.png" alt="home"></a></div>
+      <div class="block"><span>Adress att tracka</span> <input id="trackadress" type="text"></div>
+      <div class="block button"><a id="trackknapp" href="#">Track</a></div>
+    </div>
 
-    <span>Adress att tracka</span> <input id="trackadress" type="text">
-    <button id="trackknapp">Track</button>
-    <a href="index.html">Gå tillbaka till index</a>
 
     <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
@@ -36,7 +42,9 @@
           window.ga('set', {page: adress, title:'Scriptgenererad sida'});
           window.ga('send', 'pageview')
           console.log('Track', adress);
+          return false;
         });
+        
       })
     </script>
   </body>
