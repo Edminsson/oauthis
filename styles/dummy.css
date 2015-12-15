@@ -1,0 +1,44 @@
+body {
+    background-image: url(../images/dummy_background.jpg);
+    background-repeat: no-repeat;
+    xbackground-size: cover;
+    xbackground-position: top;
+}
+.overlay {
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.overlay a {
+    color: antiquewhite;
+    display:block;
+    background-color: darkblue;
+    max-width: 200px;
+    padding: 10px;
+    margin: 30px auto;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px
+}
+.content {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 300px;
+    color: antiquewhite;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}

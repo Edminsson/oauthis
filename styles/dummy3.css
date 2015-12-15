@@ -1,0 +1,72 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    color: antiquewhite;
+    font-size: 19px;
+    margin: 0;
+}
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.overlay {
+    background-color: rgb(15,15,15);
+    background-color: rgba(15,15,15,0.75);
+    margin: 0;
+    padding: 0;
+}
+.overlay a {
+    color: antiquewhite;
+    display:block;
+    max-width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px
+}
+.content {
+    margin: 0 auto;
+    max-width: 300px;
+    color: antiquewhite;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.rel-pos {
+    position:relative;
+}
+h1 {
+    margin: 0;
+    padding-top: 0.67em;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1:hover::after {
+    content: "enkel beskrivning";
+    color: cadetblue;
+    position: absolute;
+    font-size: 0.2em;
+    background-color: aliceblue;
+    display: block;
+    width:90px;
+    height: 12px;
+    border-radius: 2px;
+    left: 325px;
+    bottom: 20px;
+    padding-top: 4px
+}

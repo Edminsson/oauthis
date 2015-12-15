@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Dummy3 Page</title>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70979765-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+
+    <link rel="stylesheet" href="styles/dummy3.css">
+  </head>
+
+  <body>
+    <div class="container overlay">
+        <div><a class="is-block" href="index.html"><img src="../images/a128.png" alt="home"></a></div>
+        <div class="rel-pos"><h1>Dummy3 sidan </h1></div>
+        <div class="content">
+            <p>Denna sida har en backgrund vars background-size är satt till cover och som inte repeterar. Det funkar bra så länge sidan har en viss längd annars täcker inte bilden hela sidan. Jag kör en script som sätter body:ns höjd till vyportens för att fixa detta. Den körs även varje gång fönstret resizas.</p>        
+        </div>
+    </div>
+
+
+    <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            var anpassaStorlek = function() {
+                $('body').height($(window).height());
+                $('.overlay').height($(window).height());                
+            }
+            $(window).resize(function(){
+                anpassaStorlek();
+            })
+            anpassaStorlek();
+        });
+    </script>
+  </body>
+
+</html>

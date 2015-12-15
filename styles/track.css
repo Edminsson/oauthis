@@ -5,8 +5,25 @@ body {
 	background-image: url(../images/dark_leather.png);
 	color: rgb(226,226,226);
 }
+.input-area {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input {
+    width: 98%;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 128px
+}
 .block {
-	width: 300px;
+	width: 400px;
 	margin: 30px auto;
 }
 	.block a {
@@ -16,6 +33,9 @@ body {
 .button {
 	background-color: rgb(172,140,71);
 	border-radius: 6px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 	.button a {
 		color: rgb(226,226,226);
@@ -29,3 +49,28 @@ body {
 		background-color: rgb(119,97,48);
 		border-radius: 6px;
 	}
+
+span {
+    display: block;
+    margin-top: 11px;
+    padding-right: 10px;
+    width: 130px
+}
+
+@media screen and (min-width: 700px ) {
+    .flyter {
+        float: left;
+        width: 49%;
+    }
+    .flyter-sm {
+        float: left;
+        width: 33%;
+    }
+    .flyter-lg {
+        float: left;
+        width: 66%;
+    }
+    .fix {
+        clear: both;
+    }
+}
