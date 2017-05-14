@@ -1,0 +1,204 @@
+{
+  "@context": [
+    "http://iiif.io/api/presentation/2/context.json",
+    "http://wellcomelibrary.org/ld/ixif/0/context.json"
+  ],
+  "@id": "https://wellcomelibrary.org/iiif/b16659090/manifest",
+  "@type": "sc:Manifest",
+  "label": "The story of the Wellcome Foundation Ltd.",
+  "metadata": [
+    {
+      "label": "Title",
+      "value": "The story of the Wellcome Foundation Ltd."
+    },
+    {
+      "label": "Credits",
+      "value": "Produced by the Wellcome Foundation Film Unit. Written and directed by Florence Anthony. Photographed and edited by Douglas Fisher. Commentary spoken by David Lloyd James."
+    },
+    {
+      "label": "Date",
+      "value": "1955."
+    },
+    {
+      "label": "Physical Description",
+      "value": "1 encoded moving image (28.27 min.) : sound, color"
+    },
+    {
+      "label": "Summary",
+      "value": "This film sets the origins and growth for the Wellcome Foundation Ltd. and the Wellcome Trust in the context of the life and work of Henry S. Wellcome (1853-1936). After briefly describing his early life and adventures, the foundation of Burroughs Wellcome and Co. in 1880, and Wellcome's decision to make Britain rather than the U.S. his permanent base, the film goes on to examine each of his three main areas of activity in more detail: (1) The worldwide commercial expansion of Burroughs Wellcome as a major pharmaceutical manufacturing and wholesale company; (2) The sponsorship of biomedical and pharmaceutical research; (3) The sponsorship of archaeological excavations and the collection of books, manuscripts, instruments, artefacts and images of medical-historical interest. The film concludes with a brief sketch of Wellcome pharmaceutical production and research in the mid-1950s, and of the early work of the Wellcome Trust in sponsoring medical and medical-historical research down to 1955."
+    },
+    {
+      "label": "Attribution",
+      "value": "Wellcome Library<br/>License: CC-BY-NC-ND"
+    },
+    {
+      "label": "",
+      "value": "<a href='https://search.wellcomelibrary.org/iii/encore/record/C__Rb1665909'>View full catalogue record</a>"
+    },
+    {
+      "label": "Full conditions of use",
+      "value": "You have permission to make copies of this work under a <a target=\"_top\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons, Attribution, Non-commercial, No-derivatives license</a>. <br/><br/> Non-commercial use includes private study, academic research, teaching, and other activities that are not primarily intended for, or directed towards, commercial advantage or private monetary compensation. See the <a target=\"_top\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode\">Legal Code</a> for further information.<br/><br/>Image source should be attributed as specified in the full catalogue record. If no source is given the image should be attributed to Wellcome Library.<br/><br/> Altering, adapting, modifying or translating the work is prohibited."
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "logo": "https://wellcomelibrary.org/assets/img/squarelogo64.png",
+  "related": {
+    "@id": "https://wellcomelibrary.org/item/b16659090",
+    "format": "text/html"
+  },
+  "seeAlso": [
+    {
+      "@id": "https://wellcomelibrary.org/data/b16659090.json",
+      "format": "application/json",
+      "profile": "http://wellcomelibrary.org/profiles/res"
+    },
+    {
+      "@id": "https://wellcomelibrary.org/resource/schemaorg/b16659090",
+      "format": "application/ld+json",
+      "profile": "http://iiif.io/community/profiles/discovery/schema"
+    },
+    {
+      "@id": "https://wellcomelibrary.org/resource/dublincore/b16659090",
+      "format": "application/ld+json",
+      "profile": "http://iiif.io/community/profiles/discovery/dc"
+    }
+  ],
+  "service": {
+    "@context": "http://universalviewer.io/context.json",
+    "@id": "http://wellcomelibrary.org/service/trackingLabels/b16659090",
+    "profile": "http://universalviewer.io/tracking-extensions-profile",
+    "trackingLabel": "Format: video, Institution: n/a, Identifier: b16659090, Digicode: digfilm, Collection code: n/a"
+  },
+  "mediaSequences": [
+    {
+      "@id": "https://wellcomelibrary.org/iiif/b16659090/xsequence/s0",
+      "@type": "ixif:MediaSequence",
+      "label": "XSequence 0",
+      "elements": [
+        {
+          "@id": "https://dlcs.io/iiif-av/wellcome/1/aa12ea51-8746-4f67-92dc-acc3aad56e28/full/full/max/max/0/default.mp4#identity",
+          "@type": "dctypes:MovingImage",
+          "format": "video/mp4",
+          "label": "The story of the Wellcome Foundation Ltd.",
+          "metadata": [
+            {
+              "label": "length",
+              "value": "28mn 26s"
+            }
+          ],
+          "thumbnail": "https://wellcomelibrary.org/posterimages/0055-0000-3664-0000-0-0000-0000-0.jpg",
+          "rendering": [
+            {
+              "@id": "https://dlcs.io/iiif-av/wellcome/1/aa12ea51-8746-4f67-92dc-acc3aad56e28/full/full/max/max/0/default.mp4",
+              "format": "video/mp4"
+            },
+            {
+              "@id": "https://dlcs.io/iiif-av/wellcome/1/aa12ea51-8746-4f67-92dc-acc3aad56e28/full/full/max/max/0/default.webm",
+              "format": "video/webm"
+            }
+          ],
+          "height": 0,
+          "width": 0,
+          "resources": [
+            {
+              "@id": "https://wellcomelibrary.org/iiif/b16659090/transcript/95766191-7d87-4c07-b453-4a8092786b28",
+              "@type": "oa:Annotation",
+              "motivation": "oad:transcribing",
+              "resource": {
+                "@id": "https://dlcs.io/file/wellcome/1/95766191-7d87-4c07-b453-4a8092786b28",
+                "@type": "foaf:Document",
+                "format": "application/pdf",
+                "label": "The story of the Wellcome Foundation Ltd",
+                "metadata": [
+                  {
+                    "label": "pages",
+                    "value": "14"
+                  }
+                ],
+                "thumbnail": "https://wellcomelibrary.org/pdfthumbs/b16659090/1/95766191-7d87-4c07-b453-4a8092786b28.jpg",
+                "service": [
+                  {
+                    "@context": "http://iiif.io/api/auth/0/context.json",
+                    "@id": "https://dlcs.io/auth/2/restrictedlogin",
+                    "profile": "http://iiif.io/api/auth/0/login/restricted",
+                    "label": "Restricted material",
+                    "description": "This image cannot be viewed online.<br><br>Wellcome Library members can request access to restricted materials for viewing in the Library.<br><br>",
+                    "service": [
+                      {
+                        "@context": "http://iiif.io/api/auth/0/context.json",
+                        "@id": "https://dlcs.io/auth/2/token",
+                        "profile": "http://iiif.io/api/auth/0/token"
+                      },
+                      {
+                        "@context": "http://iiif.io/api/auth/0/context.json",
+                        "@id": "https://dlcs.io/auth/2/clickthrough/logout",
+                        "profile": "http://iiif.io/api/auth/0/logout",
+                        "label": "Log out of Wellcome Library",
+                        "description": "Log out of Wellcome Library"
+                      }
+                    ]
+                  },
+                  {
+                    "@context": "http://iiif.io/api/auth/0/context.json",
+                    "@id": "https://dlcs.io/auth/2/restrictedlogin",
+                    "profile": "http://iiif.io/api/auth/0/external",
+                    "label": "Restricted material",
+                    "service": [
+                      {
+                        "@context": "http://iiif.io/api/auth/0/context.json",
+                        "@id": "https://dlcs.io/auth/2/token",
+                        "profile": "http://iiif.io/api/auth/0/token"
+                      },
+                      {
+                        "@context": "http://iiif.io/api/auth/0/context.json",
+                        "@id": "https://dlcs.io/auth/2/clickthrough/logout",
+                        "profile": "http://iiif.io/api/auth/0/logout",
+                        "label": "Log out of Wellcome Library",
+                        "description": "Log out of Wellcome Library"
+                      }
+                    ],
+                    "failureHeader": "Restricted material",
+                    "failureDescription": "This image cannot be viewed online.<br><br>Wellcome Library members can request access to restricted materials for viewing in the Library.<br><br>"
+                  }
+                ]
+              },
+              "on": "https://dlcs.io/iiif-av/wellcome/1/aa12ea51-8746-4f67-92dc-acc3aad56e28/full/full/max/max/0/default.mp4#identity"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sequences": [
+    {
+      "@id": "https://wellcomelibrary.org/iiif/ixif-message/sequence/seq",
+      "@type": "sc:Sequence",
+      "label": "Unsupported extension. This manifest is being used as a wrapper for non-IIIF content (e.g., audio, video) and is unfortunately incompatible with IIIF viewers.",
+      "compatibilityHint": "displayIfContentUnsupported",
+      "canvases": [
+        {
+          "@id": "https://wellcomelibrary.org/iiif/ixif-message/canvas/c1",
+          "@type": "sc:Canvas",
+          "label": "Placeholder image",
+          "thumbnail": "https://wellcomelibrary.orgplaceholder.jpg",
+          "height": 600,
+          "width": 600,
+          "images": [
+            {
+              "@id": "https://wellcomelibrary.org/iiif/ixif-message/imageanno/placeholder",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://wellcomelibrary.org/iiif/ixif-message-0/res/placeholder",
+                "@type": "dctypes:Image",
+                "height": 600,
+                "width": 600
+              },
+              "on": "https://wellcomelibrary.org/iiif/ixif-message/canvas/c1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
